@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "plugin:@angular-eslint/recommended"
+      ],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "sourceType": "module"
+      },
+      "rules": {
+        "@angular-eslint/use-lifecycle-interface": "off"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
+}
+
+
