@@ -1,59 +1,120 @@
-# CountryInfo
+Country Info App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
 
-## Development server
 
-To start a local development server, run:
 
-```bash
+Angular application to explore countries, view public holidays, and navigate neighboring countries using the Nager.Date API
+.
+
+Features
+
+Home Page
+
+Search countries by name.
+
+List all countries fetched from Nager.Date API.
+
+Random countries widget showing 3 random countries and their next upcoming holiday.
+
+Navigation to country details via clickable links.
+
+Country Page
+
+Display public holidays for selected country and year (2020–2030).
+
+Switch years to view holidays in different years.
+
+Show neighboring countries as clickable chips.
+
+Holiday details include date, name, and type.
+
+Styling
+
+Light and dark theme support.
+
+Minimalistic and responsive design.
+
+Development server
+
+To start a local development server:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Open your browser at http://localhost:4200/.
+The application will automatically reload whenever you modify the source files.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Code scaffolding
 
-```bash
+Generate new components using Angular CLI:
+
 ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
+For a complete list of available schematics:
+
 ng generate --help
-```
 
-## Building
+Building the project
 
-To build the project run:
+To build the project for production:
 
-```bash
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+This will compile your project into the dist/ folder.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Running unit tests
 
-```bash
+To execute unit tests with Karma
+:
+
 ng test
-```
 
-## Running end-to-end tests
+Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+For e2e testing:
 
-```bash
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Environment Variables
 
-## Additional Resources
+You can configure the API base URL (optional):
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+window.__runtime_env__ = {
+  NAGER_BASE_URL: 'https://date.nager.at'
+};
+
+
+By default, the app uses the public Nager.Date API.
+
+Project Structure
+src/
+├─ app/
+│  ├─ home/                  # Home page component
+│  ├─ country/               # Country page component
+│  ├─ random-countries/      # Random countries widget
+│  └─ services/              # API service
+├─ styles.css                # Global styles and theming
+
+Usage
+
+Search for a country on the Home page.
+
+Click on a country to see its holidays.
+
+Switch years on the Country page to view holidays for different years.
+
+Explore neighboring countries via chips.
+
+Check 3 random countries’ next holiday in the Random Countries widget.
+
+Additional Resources
+
+Angular Documentation
+
+Nager.Date API
+
+License
+
+This project is for educational/test purposes.
