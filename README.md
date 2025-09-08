@@ -1,94 +1,64 @@
-Country Info App
+# 🌍 Country Info 
 
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
 
+A modern **Angular application** for exploring **country information** and **public holidays** worldwide.  
+Built with Angular 17+ standalone components and the **Nager.Date API**.
 
+---
 
-Angular application to explore countries, view public holidays, and navigate neighboring countries using the Nager.Date API
-.
+## ✨ Features
 
-Features
+- 🔎 **Country Search** — instant search through all available countries
+- 🎲 **Random Countries Widget** — discover 3 random countries with their next holiday
+- 📅 **Holiday Explorer** — view public holidays for any year **(2020–2030)**
+- 🌐 **Neighboring Countries** — navigate via clickable chips
+- 🎨 **Light & Dark Theme** — minimalistic and responsive UI
 
-Home Page
+---
 
-Search countries by name.
+## 🚀 Development server
 
-List all countries fetched from Nager.Date API.
+Run the local dev server:
 
-Random countries widget showing 3 random countries and their next upcoming holiday.
-
-Navigation to country details via clickable links.
-
-Country Page
-
-Display public holidays for selected country and year (2020–2030).
-
-Switch years to view holidays in different years.
-
-Show neighboring countries as clickable chips.
-
-Holiday details include date, name, and type.
-
-Styling
-
-Light and dark theme support.
-
-Minimalistic and responsive design.
-
-Development server
-
-To start a local development server:
-
+```bash
 ng serve
+```
+Navigate to http://localhost:4200/
 
+The app will auto-reload when you change any source files.
 
-Open your browser at http://localhost:4200/.
-The application will automatically reload whenever you modify the source files.
+---
 
-Code scaffolding
+## ⚙️ Running Tests
 
-Generate new components using Angular CLI:
-
-ng generate component component-name
-
-
-For a complete list of available schematics:
-
-ng generate --help
-
-Building the project
-
-To build the project for production:
-
-ng build
-
-
-This will compile your project into the dist/ folder.
-
-Running unit tests
-
-To execute unit tests with Karma
-:
-
+Unit Tests
+```bash 
 ng test
+```
 
-Running end-to-end tests
-
-For e2e testing:
-
+End-to-End Tests
+```bash 
 ng e2e
+```
 
-Environment Variables
+---
 
+## 🌐 Environment Variables
 You can configure the API base URL (optional):
 
+```bash 
 window.__runtime_env__ = {
-  NAGER_BASE_URL: 'https://date.nager.at'
+NAGER_BASE_URL: 'https://date.nager.at'
 };
+```
 
+---
 
-By default, the app uses the public Nager.Date API.
+## 🗂️ Project Structure
 
-Project Structure
+```bash 
 src/
 ├─ app/
 │  ├─ home/                  # Home page component
@@ -96,25 +66,25 @@ src/
 │  ├─ random-countries/      # Random countries widget
 │  └─ services/              # API service
 ├─ styles.css                # Global styles and theming
+```
 
-Usage
+---
 
-Search for a country on the Home page.
+## 📝 Usage
 
-Click on a country to see its holidays.
+1.Search for a country on the Home page.
 
-Switch years on the Country page to view holidays for different years.
+2.Click a country to view its holidays.
 
-Explore neighboring countries via chips.
+3.Switch years on the Country page.
 
-Check 3 random countries’ next holiday in the Random Countries widget.
+4.Explore neighboring countries via chips.
 
-Additional Resources
+5.Check 3 random countries’ next holiday in the Random Countries widget.
 
-Angular Documentation
-
-Nager.Date API
-
-License
+---
+## 📄 License
 
 This project is for educational/test purposes.
+
+---
